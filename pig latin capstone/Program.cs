@@ -15,7 +15,7 @@ namespace pig_latin_capstone
                 string lower = input.ToLower();
                 
 
-                if (input == null)
+                if (input == null) // also this wont work for trying to make sure the user actually input something
                 {
                     Console.WriteLine("You must type something");
                     again = GoAgain();
