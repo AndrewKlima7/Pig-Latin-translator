@@ -1,0 +1,13 @@
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.exe
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.deps.json
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.runtimeconfig.json
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.runtimeconfig.dev.json
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.dll
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\bin\Debug\netcoreapp3.1\pig latin capstone.pdb
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.csprojAssemblyReference.cache
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.AssemblyInfoInputs.cache
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.AssemblyInfo.cs
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.dll
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.pdb
+C:\Users\Andre\source\repos\pig latin capstone\pig latin capstone\obj\Debug\netcoreapp3.1\pig latin capstone.genruntimeconfig.cache
