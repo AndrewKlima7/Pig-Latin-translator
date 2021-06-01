@@ -12,29 +12,32 @@ namespace pig_latin_capstone
                 Console.WriteLine("Please write a word to be translated");
                 string input = Console.ReadLine();
                 string lower = input.ToLower();
-                
+                string[] words = input.Split();
 
-                if (input.Length == 0) // also this wont work for trying to make sure the user actually input something
+                foreach(string word in words) // this does words now and i switched all 'input' with 'word'
                 {
-                    Console.WriteLine("You must type something");
-                }
-                else
-                {
-                    char[] Voids = { '@', '%', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$', '#', '&' };
-                    
-                    foreach (char c in lower.ToCharArray())
+                    if (input.Trim().Length == 0) // FINALLY GOT IT TO WORK, JUST MAKE IT IF THE LENGTH OF THE USERINPUT == 0
                     {
-                        if (input.Trim().Contains(Voids[0]) || input.Trim().Contains(Voids[1]) || input.Trim().Contains(Voids[2]) || input.Trim().Contains(Voids[3]) || input.Trim().Contains(Voids[4]) || input.Trim().Contains(Voids[5]) || input.Trim().Contains(Voids[6]) || input.Trim().Contains(Voids[7]) || input.Trim().Contains(Voids[8]) || input.Trim().Contains(Voids[9]) || input.Trim().Contains(Voids[10]) || input.Trim().Contains(Voids[11]) || input.Trim().Contains(Voids[12]) || input.Trim().Contains(Voids[13]) || input.Trim().Contains(Voids[14]))
-                        {
-                            Console.WriteLine(input.Trim());
-                            break;
-                        }
-                        else
-                        {
-                            bool vowel = IsVowel(input);
-                            break;
-                        }
+                        Console.WriteLine("You must type something");
                     }
+                    else
+                    {
+                        char[] Voids = { '@', '%', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$', '#', '&' };
+
+                        foreach (char c in lower.ToCharArray())
+                        {
+                            if (word.Trim().Contains(Voids[0]) || word.Trim().Contains(Voids[1]) || word.Trim().Contains(Voids[2]) || word.Trim().Contains(Voids[3]) || word.Trim().Contains(Voids[4]) || word.Trim().Contains(Voids[5]) || word.Trim().Contains(Voids[6]) || word.Trim().Contains(Voids[7]) || word.Trim().Contains(Voids[8]) || word.Trim().Contains(Voids[9]) || word.Trim().Contains(Voids[10]) || word.Trim().Contains(Voids[11]) || word.Trim().Contains(Voids[12]) || word.Trim().Contains(Voids[13]) || word.Trim().Contains(Voids[14]))
+                            {
+                                Console.WriteLine(word.Trim());
+                                break;
+                            }
+                            else
+                            {
+                                bool vowel = IsVowel(word);
+                                break;
+                            }
+                        }
+                    }              
                 }
                 again = GoAgain();
             }           
@@ -53,9 +56,14 @@ namespace pig_latin_capstone
                     Console.WriteLine(translate);
                     return true;
                 }
+                else if (userInput.IndexOfAny(Vowels) == -1) //if there are no vowels =)
+                {
+                    Console.WriteLine(userInput + "ay");
+                    return true;
+                }
                 else
                 {
-                    Console.WriteLine("The first vowel in {0} is at index {1}", userInput, userInput.IndexOfAny(Vowels));
+                    // Console.WriteLine("The first vowel in {0} is at index {1}", userInput, userInput.IndexOfAny(Vowels));
                     string[] word = userInput.Split(Vowels);
                     string sub = userInput.Substring(userInput.IndexOfAny(Vowels));
 
